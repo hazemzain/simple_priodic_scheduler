@@ -1,0 +1,128 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             |.text|,CODE,READONLY,ALIGN=2
+    2 00000000                 THUMB
+    3 00000000                 PRESERVE8
+    4 00000000                 EXTERN           currentPt
+    5 00000000                 EXPORT           PendSV_Handler
+    6 00000000                 EXPORT           osSchedularLaunch
+    7 00000000                 IMPORT           osSchedulerPeriodicRR
+    8 00000000         
+    9 00000000         PendSV_Handler                       ;save r0,r1,r2,r3,r
+                                                            12,lr,pc,psr  
+   10 00000000 B672            CPSID            I
+   11 00000002 E92D 0FF0       PUSH             {R4-R11}
+   12 00000006 480F            LDR              R0,=currentPt
+   13 00000008 6801            LDR              R1,[R0]
+   14 0000000A         
+   15 0000000A F8C1 D000       STR              SP,[R1]
+   16 0000000E         ;LDR    R1,[R1,#4]   ;select the the next thread hich wi
+                       ll be excuted(They select the next the next member, thes
+                       e two lines.Selects the next threat put put in these two
+                        lines together, we are able to sort of switch to the ne
+                       xt)
+   17 0000000E         ;STR    R1,[R0]
+   18 0000000E B501            push             {R0,LR}
+   19 00000010         ;Branch to subroutin which e ill write with c
+   20 00000010 F7FF FFFE       BL               osSchedulerPeriodicRR
+   21 00000014 E8BD 4001       pop              {R0,LR}
+   22 00000018         ; I'm going to set the new thread 
+   23 00000018 6801            LDR              R1,[R0]     ;R1=Currentptr ->ne
+                                                            w thread
+   24 0000001A F8D1 D000       LDR              SP,[R1]
+   25 0000001E         
+   26 0000001E E8BD 0FF0       POP              {R4-R11}
+   27 00000022 B662            CPSIE            I
+   28 00000024 4770            BX               LR
+   29 00000026         
+   30 00000026         
+   31 00000026         osSchedularLaunch
+   32 00000026 4807            LDR              R0,=currentPt
+   33 00000028 6802            LDR              R2,[R0]
+   34 0000002A         
+   35 0000002A F8D2 D000       LDR              SP,[R2]
+   36 0000002E         
+   37 0000002E E8BD 0FF0       POP              {R4-R11}
+   38 00000032 BC0F            POP              {R0-R3}
+   39 00000034 F85D CB04       POP              {R12}
+   40 00000038 B001            ADD              SP,SP,#4
+   41 0000003A F85D EB04       POP              {LR}
+   42 0000003E B001            ADD              SP,SP,#4
+   43 00000040 B662            CPSIE            I
+   44 00000042 4770            BX               LR
+   45 00000044                 ALIGN
+   46 00000044                 END
+              00000000 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend=.\objects\oskernel_1.d -o.\objects\oskernel_1.o -I.\RTE\_stm32f
+4 -IF:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include -IF:\arm_keil\arm
+_set_up\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include --p
+redefine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 527" --predefine="
+_RTE_ SETA 1" --predefine="STM32F429xx SETA 1" --list=.\listings\oskernel.lst o
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+sKernel.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 1 in file osKernel.s
+   Uses
+      None
+Comment: .text unused
+PendSV_Handler 00000000
+
+Symbol: PendSV_Handler
+   Definitions
+      At line 9 in file osKernel.s
+   Uses
+      At line 5 in file osKernel.s
+Comment: PendSV_Handler used once
+osSchedularLaunch 00000026
+
+Symbol: osSchedularLaunch
+   Definitions
+      At line 31 in file osKernel.s
+   Uses
+      At line 6 in file osKernel.s
+Comment: osSchedularLaunch used once
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+currentPt 00000000
+
+Symbol: currentPt
+   Definitions
+      At line 4 in file osKernel.s
+   Uses
+      At line 12 in file osKernel.s
+      At line 32 in file osKernel.s
+
+osSchedulerPeriodicRR 00000000
+
+Symbol: osSchedulerPeriodicRR
+   Definitions
+      At line 7 in file osKernel.s
+   Uses
+      At line 20 in file osKernel.s
+Comment: osSchedulerPeriodicRR used once
+2 symbols
+342 symbols in table

@@ -1,0 +1,49 @@
+Dependencies for Project 'myRTOS', Target 'stm32f4': (DO NOT MODIFY !)
+F (.\osKernel.c)(0x647BD9A4)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -W -O0 --apcs=interwork --split_sections-I.\RTE\_stm32f4-IF:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IF:\arm_keil\arm_set_up\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F429xx-o .\objects\oskernel.o --omf_browse .\objects\oskernel.crf --depend .\objects\oskernel.d)
+I (osKernel.h)(0x647BD9A4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
+I (F:\arm_keil\arm_set_up\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5A8FE7C4)
+I (F:\arm_keil\arm_set_up\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x5A8FE7C4)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8FA234)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B9768A4)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8FA234)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8FA234)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
+I (F:\arm_keil\arm_set_up\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5A8FE7C4)
+F (.\osKernel.h)(0x647BD9A4)()
+F (.\osKernel.s)(0x647BB1C5)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_stm32f4-IF:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IF:\arm_keil\arm_set_up\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 527" --pd "_RTE_ SETA 1" --pd "STM32F429xx SETA 1"--list .\listings\oskernel.lst --xref -o .\objects\oskernel_1.o --depend .\objects\oskernel_1.d)
+F (.\main.c)(0x647D0A2A)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -W -O0 --apcs=interwork --split_sections-I.\RTE\_stm32f4-IF:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IF:\arm_keil\arm_set_up\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F429xx-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (osKernel.h)(0x647BD9A4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
+I (F:\arm_keil\arm_set_up\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5A8FE7C4)
+I (F:\arm_keil\arm_set_up\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x5A8FE7C4)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8FA234)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B9768A4)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8FA234)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8FA234)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
+I (F:\arm_keil\arm_set_up\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5A8FE7C4)
+I (STM32F4_RTOS_BSP.h)(0x647A8A7E)
+F (.\STM32F4_RTOS_BSP.h)(0x647A8A7E)()
+F (.\STM32F4_RTOS_BSP.c)(0x647D0943)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -W -O0 --apcs=interwork --split_sections-I.\RTE\_stm32f4-IF:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IF:\arm_keil\arm_set_up\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F429xx-o .\objects\stm32f4_rtos_bsp.o --omf_browse .\objects\stm32f4_rtos_bsp.crf --depend .\objects\stm32f4_rtos_bsp.d)
+I (STM32F4_RTOS_BSP.h)(0x647A8A7E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
+I (F:\arm_keil\arm_set_up\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5A8FE7C4)
+I (F:\arm_keil\arm_set_up\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x5A8FE7C4)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8FA234)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B9768A4)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8FA234)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8FA234)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
+I (F:\arm_keil\arm_set_up\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5A8FE7C4)
+F (RTE\Device\STM32F429ZITx\startup_stm32f429xx.s)(0x5A8FE7C4)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_stm32f4-IF:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IF:\arm_keil\arm_set_up\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 527" --pd "_RTE_ SETA 1" --pd "STM32F429xx SETA 1"--list .\listings\startup_stm32f429xx.lst --xref -o .\objects\startup_stm32f429xx.o --depend .\objects\startup_stm32f429xx.d)
+F (RTE\Device\STM32F429ZITx\system_stm32f4xx.c)(0x5A8FE7C4)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -W -O0 --apcs=interwork --split_sections-I.\RTE\_stm32f4-IF:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IF:\arm_keil\arm_set_up\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F429xx-o .\objects\system_stm32f4xx.o --omf_browse .\objects\system_stm32f4xx.crf --depend .\objects\system_stm32f4xx.d)
+I (F:\arm_keil\arm_set_up\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5A8FE7C4)
+I (F:\arm_keil\arm_set_up\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x5A8FE7C4)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8FA234)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B9768A4)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8FA234)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8FA234)
+I (F:\arm_keil\arm_set_up\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
+I (F:\arm_keil\arm_set_up\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5A8FE7C4)
